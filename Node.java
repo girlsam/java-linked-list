@@ -7,14 +7,7 @@ public class Node {
 		this.student = student;
 	}
 	
-	public void setNextNode(Node nextNode) {
-		this.nextNode = nextNode;
-	}
-	
-	public void setStudent(Student student) {
-		this.student = student;
-	}
-	
+	// getters
 	public Node getNextNode() {
 		return nextNode;
 	}
@@ -25,5 +18,14 @@ public class Node {
 	
 	public Boolean hasNext() {
 		return nextNode != null;
+	}
+	
+	// setters
+	public void setNextNode(Node nextNode) {
+		this.nextNode = nextNode;
+	}
+	
+	public void setStudent(Student student) {
+		this.student = student;
 	}
 }

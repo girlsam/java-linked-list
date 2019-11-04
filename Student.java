@@ -30,12 +30,6 @@ public class Student {
         printWriter.println("  " + gpa + " GPA");      
 	}
 	
-	public void listStudent() {
-        System.out.println(name);
-        System.out.println("  " + address);
-        System.out.println("  " + gpa + " GPA");      
-	}
-	
 	// setters for private fields
 	public void setName(String name) {
 		this.name = name;
@@ -47,7 +41,7 @@ public class Student {
 	
 	public void setGPA(double gpa) {
 		try {
-			if (gpa < 0.0 || Double.isNaN(gpa)) {
+			if (gpa < 0.0 || gpa > 4.0) {
 				this.gpa = 0.0;
 				throw new Exception("Invalid GPA.");
 			} else {

@@ -6,9 +6,10 @@ import java.util.Scanner;
 public class Main {
 	public static StudentLinkedList linkedList = new StudentLinkedList();
 	
+	// write list to designated file
 	public static void writeToFile() throws Exception {
 		try {
-    		FileWriter fileWriter = new FileWriter("/Users/samagold/Documents/log/log.txt");
+    		FileWriter fileWriter = new FileWriter("C:/log/log.txt");
     		PrintWriter printWriter = new PrintWriter(fileWriter);
     		
     		linkedList.printList(printWriter);
@@ -24,7 +25,7 @@ public class Main {
 		Scanner scnr = new Scanner(System.in).useLocale(Locale.US);
 		
 		System.out.println("You will be prompted to enter data for five students...");
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 2; i++) {
 			System.out.println("Enter student name (Last, First)");
 			String name = scnr.nextLine();
 			
