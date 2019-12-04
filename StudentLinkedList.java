@@ -4,7 +4,7 @@ public class StudentLinkedList {
 	private Node head;
 	private Node tail;
 	
-	// instantiate list as empty
+	// instantiate empty list
 	public StudentLinkedList() {
 		head = null;
 		tail = null;
